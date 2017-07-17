@@ -35,4 +35,10 @@ public class File {
 		}
 		return string_output;
 	}
+	public String getFileLine(int line){
+		return FileLines[line];
+	}
+	public String getCharAt(int row,int col){
+		return FileLines[row].substring(col);
+	}
 }
