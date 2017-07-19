@@ -7,11 +7,11 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class File {
-	public String[] FileLines;
+	public ArrayList<String> FileLines;
 	public File(String filename_){
 		FileLines = getLines(filename_);
 	}
-	private String[] getLines(String filename){
+	private ArrayList<String> getLines(String filename){
 		BufferedReader buffer_reader;
 		FileReader file_input;
 		ArrayList <String>file_lines = new ArrayList();
@@ -23,10 +23,10 @@ public class File {
 				file_lines.add(current_line);
 			}
 		}catch(IOException e){
-			
+			e.printStackTrace();
 		}
 		
-		return (String[])file_lines.toArray();
+		return file_lines;
 	}
 	public String getFileContents(){
 		String string_output = "";
@@ -36,9 +36,10 @@ public class File {
 		return string_output;
 	}
 	public String getFileLine(int line){
-		return FileLines[line];
+		return FileLines.get(line);
 	}
 	public String getCharAt(int row,int col){
-		return FileLines[row].substring(col);
+		return FileLines.get(row).substring(col);
 	}
+	
 }
