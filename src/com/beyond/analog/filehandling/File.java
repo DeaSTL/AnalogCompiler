@@ -35,6 +35,13 @@ public class File {
 		}
 		return string_output;
 	}
+	public String getFileWithoutBreaks(){
+		String string_output = "";
+		for(String line:FileLines){
+			string_output += line;
+		}
+		return string_output;
+	}
 	public String getFileLine(int line){
 		return FileLines.get(line);
 	}

@@ -1,6 +1,6 @@
 package com.beyond.analog.datatypes;
 
-public class DataType {
+public abstract class DataType {
 	public String data_type = null;
 	public String data_value = null;
 	public int block_index;
@@ -36,5 +36,6 @@ public class DataType {
 	public void setBlock_end(int block_end) {
 		this.block_end = block_end;
 	}
+	
 	
 }

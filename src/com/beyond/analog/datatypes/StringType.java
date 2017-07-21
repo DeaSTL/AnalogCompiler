@@ -7,4 +7,9 @@ public class StringType extends DataType {
 	public StringType(String data_){
 		
 	}
+
+	public String generateLuaEquivalent() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

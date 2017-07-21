@@ -3,10 +3,10 @@ import lib
 class main{
 	int value = 5;
 	str string_value = "hello";
-	const(){
+	const main(){
 	
 	};
-	dest(){
+	dest main(){
 	
 	};
 	func void function_name(){
